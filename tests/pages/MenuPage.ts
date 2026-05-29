@@ -8,5 +8,4 @@ export class MenuPage extends BasePage {
     super(page);
     this.heading = page.getByTestId('gridtextbox:z5f2az');
   }
-
 }
