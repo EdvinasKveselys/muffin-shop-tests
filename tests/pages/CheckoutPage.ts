@@ -84,10 +84,6 @@ export class CheckoutPage extends BasePage {
     await this.parcelBoxDropdown.waitFor({ state: 'visible' });
   }
 
-  /**
-   * Opens the parcel box combobox, optionally filters via its search field,
-   * and selects the option whose `data-value` matches `parcelBox` exactly.
-   */
   async selectParcelBox(parcelBox: string) {
     await this.openParcelBoxDropdown();
     await this.parcelBoxSearch.fill(parcelBox);
